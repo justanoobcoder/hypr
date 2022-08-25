@@ -1,0 +1,6 @@
+#!/bin/bash
+
+run() { command -v ${1} > /dev/null && ${@}; }
+
+run dunst & # notification daemon
+run swaybg -i ~/user/pictures/wallpaper.jpg & # set desktop background
